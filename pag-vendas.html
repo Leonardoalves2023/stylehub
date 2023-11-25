@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub</title>
+    <link rel="stylesheet" href="owl/css/owl.carousel.min.css">   
+    <link rel="stylesheet" href="pag-vendas.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <style>
+        /* #input-emial:focus{
+            box-shadow: 1px 1px 8px 3px red;
+        } */
+       
+    </style>
+</head>
+<body>
+    
+
+    
+    <!-- Conteúdo do cabeçalho aqui -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white static-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img id="logo-mobile" src="StyleHUB.png" alt="">
+            </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="topdemais()">
+                        <span class="navbar-toggler-icon">
+                            
+                        </span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#p4">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modal3" >Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-bs-target="#modalId" data-bs-toggle="modal">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav style="margin-left: 10px;" class="navbar navbar-expand-sm navbar-dark bg-light" id="navoculto">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p4">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal3">sobre nos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-target="#modalId" data-bs-toggle="modal">contato</a>
+                    </li>
+                </ul>
+               </nav>
+            
+            
+            
+            
+            
+            <div style="position: relative;">
+                <div class="banner">
+                
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="caption">
+                                <h2>StyleHub</h2>
+                                <div class="line-dec"></div>
+                                <p>AS MELHORES ROUPAS VOCÊ ENCONTRA AQUI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seu banner aqui com o caption -->
+            </div>
+               
+               
+            
+    <main>
+
+        <div class="featured-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="text-center">
+                                <div class="featured-item">
+                                    <img src="assets/images/item-01.jpg" alt="">
+                                    <h4>PRODUTO</h4>
+                                    <h6>R$20,00</h6>
+                                    <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#meumodal1">Comprar</a>
+                                </div>
+                            </div>
+                           <div class="text-center">
+                                <div class="featured-item" id="p4">
+                                    <img src="assets/images/item-02.jpg" alt="">
+                                    <h4>PRODUTO</h4>
+                                    <h6>R$20,00</h6>
+                                    <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#meumodal1">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="featured-item">
+                                    <img src="assets/images/item-03.jpg" alt="">
+                                    <h4>PRODUTO</h4>
+                                    <h6>R$30,00</h6>
+                                    <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#meumodal1">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="featured-item">
+                                    <img src="assets/images/item-04.jpg" alt="">
+                                    <h4>PRODUTO</h4>
+                                    <h6>R$12,00</h6>
+                                    <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#meumodal1">Comprar</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="meumodal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastro do Pedido</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" required>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputPassword3" required>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">CPF</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="inputPassword3" placeholder=" Ex: 000.000.000-00" maxlength="11" required>
+                                </div>
+                              </div>
+                            <fieldset class="row mb-3">
+                              <legend class="col-form-label col-sm-2 pt-0">Forma de Pagamento</legend>
+                              <div class="col-sm-10">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="gridRadios1">
+                                    Pix
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                  <label class="form-check-label" for="gridRadios2">
+                                    Cartão
+                                  </label>
+                                </div>
+                               
+                              </div>
+                            </fieldset>
+                            <button type="submit" class="btn btn-primary">Fazer Pedido</button>
+                          </form>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="height: 199px;background-color: rgb(7, 7, 87)" class="mb-2  text-white text-center">
+            <div class="container" style="padding-top: 40px;">
+              <p class="text-white" id="texto">Insira seus dados abaixo para receber informações atualizadas dos produtos</p>
+              
+              <form class="d-flex justify-content-center" id="formulario">
+                <div class="form-group mx-2">
+                  <input type="email" class="form-control" id="input-emial" placeholder="Digite seu email" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="enviado">Concluir</button>
+              </form>
+            </div>
+          </section>
+           
+          
+          
+          
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="StyleHUB.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">How It Works ?</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>StyleHub &copy; Todos os direitos reservados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal3">
+            <div class="modal-dialog">
+        
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sobre nós</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente tenetur doloribus et rerum voluptatum! Dolores ut veritatis facere aperiam recusandae dignissimos maiores magnam consectetur, aliquid amet impedit doloremque eaque.</p>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+                    
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Contato</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form>
+                                <div class="mb-3 row">
+                                    <label for="inputName" class="col-4 col-form-label">Email</label>
+                                    <div class="col-8">
+                                        <input type="email" class="form-control" name="inputName" id="inputName" placeholder="Digite seu email">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3 row">
+                                    <div class="offset-sm-4 col-sm-8">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        
+        
+        
+
+
+        
+
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="owl/js/owl.carousel.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="pag-vendas.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                items: 3,
+                // Adicione outras opções conforme necessário
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/99031d50ae.js" crossorigin="anonymous"></script>
+    <script>
+         $('#enviado').on('click',function(e){
+            e.preventDefault()
+            if($('#input-emial').val() != '')
+            
+            $('#input-emial').animate({
+                opacity: "toggle",
+                top:"-20px"    
+            },   
+        )
+            })
+            $('#enviado').on('click',function(e){
+                e.preventDefault()
+                $('#enviado').animate({
+                    opacity: "toggle",
+                    top:"-20px"
+                })
+                var texto = document.getElementById('texto')
+             texto.innerHTML = 'Email enviado com Sucesso!!'
+             texto.style.fontSize = '30px'
+             texto.style.marginTop = '40px'
+                
+            })
+            function topdemais(){
+                var mostra = document.querySelector('#navoculto')
+                if(mostra.style.display == 'none'){
+                    
+                    $('#navoculto').animate({
+                    opacity: "toggle",
+                    right:"20px"
+                })
+                mostra.style.display = 'block'
+
+
+
+                }
+                else{
+                    mostra.style.display = 'none'   
+            }
+            }
+    </script>
+    
+
+
+</body>
+</html>
